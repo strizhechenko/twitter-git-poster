@@ -12,6 +12,17 @@ vim etc/sysconfig/git_poster
 cp -av {,/}etc/sysconfig/git_poster
 ```
 
+# Setup
+
+We need to clone repos which changes we're tracking.
+
+``` shell
+mkdir $bot_dir/repos/
+git clone git@github.com/strizhechenko/twitter-git-poster $bot_dir/repos/twitter-git-poster
+git log # here you should find commit id which will be first to tweet (older will be skipped)
+echo $commit > $bot_dir/repos/twitter-git-poster.commit # it's only for first run.
+```
+
 # Create bot with tfctl
 ``` shell
 tfctl create <@bot_name> writer <db_id> <token> <secret> '' '' ''
