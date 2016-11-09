@@ -7,7 +7,7 @@ bot_name="twitter_nickname_without_@"
 bot_dir=/opt/twitterbot_farm_bots/$bot_name
 mkdir -p $bot_dir
 cd $bot_dir
-git clone https://github.com/strizhechenko/twitter_git_poster
+git clone https://github.com/strizhechenko/twitter-git-poster
 vim etc/sysconfig/git_poster
 cp -av {,/}etc/sysconfig/git_poster
 ```
