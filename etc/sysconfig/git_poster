@@ -2,3 +2,4 @@ PRODUCT="PRODUCT_NAME"
 TMPDIR=/tmp/git_poster/
 BOT_NAME=bot_name
 JIRA_TASK_REGEX="^CR-[0-9]+[.]?$")"
+BOT_HOME=/opt/twitterbot_farm_bots/$BOT_NAME
