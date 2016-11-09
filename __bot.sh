@@ -37,3 +37,4 @@ new_commit="$(head -1 $TMPFILE)"
 if [ -n "${new_commit:-}" ]; then
 	echo $new_commit > $REPO.commit
 fi
+rm -f $TMPFILE
