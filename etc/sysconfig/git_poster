@@ -1,0 +1,4 @@
+PRODUCT="PRODUCT_NAME"
+TMPDIR=/tmp/git_poster/
+BOT_NAME=bot_name
+JIRA_TASK_REGEX="^CR-[0-9]+[.]?$")"
